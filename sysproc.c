@@ -7,10 +7,14 @@
 #include "mmu.h"
 #include "proc.h"
 
+//>>>>>>>> Chamada fork por outro processo. 
+
 int
 sys_fork(void)
 {
-  return fork();
+  int argfork;
+  argint(0,&argfork);
+  return fork(argfork);
 }
 
 int
